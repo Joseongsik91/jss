@@ -4,7 +4,6 @@ import com.oneplat.oap.core.model.SearchRequest;
 import com.oneplat.oap.mgmt.board.model.Board;
 import com.oneplat.oap.mgmt.board.model.ResponseNoticeList;
 import com.oneplat.oap.mgmt.board.service.NoticeService;
-import com.oneplat.oap.mgmt.common.model.AuthenticationInjector;
 import io.swagger.annotations.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,7 +24,7 @@ public class NoticeRestController {
     private NoticeService noticeService;
 
     @Autowired
-    AuthenticationInjector authenticationInjector;
+    
     private static final Logger LOGGER = LoggerFactory.getLogger(NoticeRestController.class);
 
     /**
