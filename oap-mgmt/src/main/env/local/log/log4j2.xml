@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d [%-5p] [%.7thread] %c %L- %m%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Logger name="org.springframework" level="INFO" additivity="false">
+            <AppenderRef ref="console"/>
+        </Logger>
+        <Logger name="com.java.sql" level="DEBUG" additivity="false">
+            <AppenderRef ref="console"/>
+        </Logger>
+        <Logger name="org.quartz" level="INFO" additivity="false">
+            <AppenderRef ref="console"/>
+        </Logger>
+        <Logger name="com.mangofactory" level="DEBUG" additivity="false">
+            <AppenderRef ref="console"/>
+        </Logger>
+        <Logger name="org.apache.commons.digester" level="INFO" additivity="false">
+            <AppenderRef ref="console"/>
+        </Logger>
+        <Root level="DEBUG">
+            <AppenderRef ref="console"/>
+        </Root>
+    </Loggers>
+</Configuration>
+
+
