@@ -23,6 +23,7 @@ public class NoticeServiceImpl implements NoticeService{
     @Autowired
     private NoticeMapper noticeMapper;
     
+    
     private static final Logger LOGGER = LoggerFactory.getLogger(NoticeServiceImpl.class);
 
     @Override
