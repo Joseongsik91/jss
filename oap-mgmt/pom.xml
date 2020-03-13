@@ -142,6 +142,12 @@
 		    <artifactId>springfox-swagger2</artifactId>
 		    <version>2.9.2</version>
 		</dependency>
+		<dependency>
+		    <groupId>org.codehaus.groovy</groupId>
+		    <artifactId>groovy-all</artifactId>
+		    <version>2.4.15</version>
+		</dependency>
+		
 	</dependencies>
 	
 	<repositories>
@@ -166,6 +172,31 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<!-- 그루비 -->
+			 <plugin>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <!-- 2.8.0-01 and later require maven-compiler-plugin 3.1 or higher -->
+                    <version>3.1</version>
+                    <configuration>
+                        <compilerId>groovy-eclipse-compiler</compilerId>
+                    </configuration>
+                    <dependencies>
+                        <dependency>
+                            <groupId>org.codehaus.groovy</groupId>
+                            <artifactId>groovy-eclipse-compiler</artifactId>
+                            <version>2.9.1-01</version>
+                        </dependency>
+                        <!-- for 2.8.0-01 and later you must have an explicit dependency on 
+                            groovy-eclipse-batch -->
+                        <dependency>
+                            <groupId>org.codehaus.groovy</groupId>
+                            <artifactId>groovy-eclipse-batch</artifactId>
+                            <version>2.3.7-01</version>
+                        </dependency>
+                    </dependencies>
+                </plugin>
+			<!-- 그루비 -->
+			
 		</plugins>
 		
 		<resources>

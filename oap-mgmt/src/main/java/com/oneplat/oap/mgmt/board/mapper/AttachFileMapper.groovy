@@ -1,14 +1,14 @@
 package com.oneplat.oap.mgmt.board.mapper;
 
 import com.oneplat.oap.mgmt.board.model.AttachFile
-//import org.apache.ibatis.annotations.Delete
-//import org.apache.ibatis.annotations.Insert
-//import org.apache.ibatis.annotations.Mapper
-//import org.apache.ibatis.annotations.Result
-//import org.apache.ibatis.annotations.Results
-//import org.apache.ibatis.annotations.Select
-//import org.apache.ibatis.annotations.SelectKey
-//import org.apache.ibatis.annotations.Update
+import org.apache.ibatis.annotations.Delete
+import org.apache.ibatis.annotations.Insert
+import org.apache.ibatis.annotations.Mapper
+import org.apache.ibatis.annotations.Result
+import org.apache.ibatis.annotations.Results
+import org.apache.ibatis.annotations.Select
+import org.apache.ibatis.annotations.SelectKey
+import org.apache.ibatis.annotations.Update
 
 /**
  * Created by LSH on 2016. 12. 19..
