@@ -13,11 +13,9 @@ import java.util.List;
 /**
  * Created by LSH on 2016. 12. 18..
  */
-
 @ApiModel
-@EqualsAndHashCode(callSuper=false)
 @Data
-public class Board extends AbstractObject {
+public class Board {
 
     /** 공지사항 번호*/
     @ApiModelProperty(value = "공지사항 번호", required = true, example = "", allowableValues = "")
@@ -52,40 +50,5 @@ public class Board extends AbstractObject {
     /** 삭제 여부*/
     @ApiModelProperty(value = "삭제 여부", required = true, example = "", allowableValues = "")
     private Boolean noticeDeleteYn;
-
-
-    /** 첨부 파일 */
-    @ApiModelProperty(value = "첨부파일", required = false)
-    private List<AttachFile> attachFileList;
-
-//
-//
-//    @ApiModel(description="공지사항 데이타 모델")
-//    @EqualsAndHashCode(callSuper=false)
-//    @NoArgsConstructor
-//    @Data
-//    static public class CreateNotice extends Board{
-//
-//        /** 공지사항 번호*/
-//        @ApiModelProperty(hidden=true)
-//        private Long noticeNumber;
-//        /** 조회 횟수 */
-//        @ApiModelProperty(hidden=true)
-//        private int inquiryCount;
-//        /** 첨부 파일 */
-//        @ApiModelProperty(hidden=true)
-//        private List<AttachFile> attachFileList;
-//    }
-//
-//    @ApiModel
-//    @EqualsAndHashCode(callSuper=false)
-//    @Data
-//    static public class UpdateNotice extends Board {
-//        /** 공지사항 번호*/
-//        @ApiModelProperty(hidden=true)
-//        private Long noticeNumber;
-//        @ApiModelProperty(hidden=true)
-//        private List<AttachFile> attachFileList;
-//    }
 }
 
