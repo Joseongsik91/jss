@@ -62,6 +62,7 @@ interface NoticeMapper {
 
             </if>
         ORDER BY CREATE_DATETIME DESC
+        LIMIT #{pageInfo.startRowNum}, #{pageInfo.size}
     </script>
     """)
     List<Board> selectNoticeList(SearchRequest searchRequest);
