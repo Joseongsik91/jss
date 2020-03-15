@@ -10,4 +10,12 @@ import java.util.List;
  */
 public interface NoticeService {
     public List<Board> getNoticeList(SearchRequest searchRequest);
+
+    Board getNoticeDetail(Long noticeNumber);
+
+    Board createNotice(Board notice);
+
+    void modifyNotice(Board notice);
+
+    void removeNotice(Board notice);
 }
